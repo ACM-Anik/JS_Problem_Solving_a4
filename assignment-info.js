@@ -167,13 +167,14 @@ console.log(negative);
 // Output: 303
 
 // Answer:-
-let firstGemsPower = 21;
-let secondGemsPower = 32;
-let thirdGemsPower = 43;
+
 function gemsToDiamond(firstFriend, secondFriend, thirdFriend){
-    if( typeof firstFriend !== "number" || typeof secondFriend !== "number" || typeof thirdFriend !== "number"){
-        return "Please enter the numbers";
+    if( typeof firstFriend !== "number" || typeof secondFriend !== "number" || typeof thirdFriend !== "number" || firstFriend < 0 || secondFriend < 0 || thirdFriend < 0 ){
+        return "Please enter the numbers with positive value";
     }
+    let firstGemsPower = 21;
+    let secondGemsPower = 32;
+    let thirdGemsPower = 43;
     const firstConvertedDiamond = firstFriend * firstGemsPower;
     const secondConvertedDiamond = secondFriend * secondGemsPower;
     const thirdConvertedDiamond = thirdFriend * thirdGemsPower;
