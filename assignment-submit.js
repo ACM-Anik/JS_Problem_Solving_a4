@@ -16,7 +16,7 @@ function mindGame(number){
 // To find the number, is it really even or odd:-
 function evenOdd(string){
     if( typeof string !== "string"){
-        return "Please enter a string";
+        return "Please provide string";
     }
     let stringLength = string.length;
     if(stringLength % 2 === 0){
