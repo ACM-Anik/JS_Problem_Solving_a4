@@ -96,7 +96,7 @@ function isLGSeven(number){
         return difference;
     }
     else if(difference > 7){
-        let double =Math.pow(difference);
+        let double = number * 2;
         return double;
     }
 }
